@@ -1,5 +1,7 @@
 package com.linklist.example;
 
+import java.util.ArrayList;
+
 /**
  * Java program to find middle element of linked list in one pass.
  * In order to find middle element of linked list we need to find length first
@@ -20,6 +22,9 @@ public class LinkedListTest {
       linkedList.add( new LinkedList.Node("2"));
       linkedList.add( new LinkedList.Node("3"));
       linkedList.add( new LinkedList.Node("4"));
+      
+      //ArrayList<E>
+      //java.util.LinkedList<E>
     
       //finding middle element of LinkedList in single pass
       LinkedList.Node current = head;

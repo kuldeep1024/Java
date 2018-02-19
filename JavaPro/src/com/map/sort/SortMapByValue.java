@@ -12,14 +12,19 @@ public class SortMapByValue {
 
 	public static void main(String[] args) {
 		Map<String, Integer> map = new HashMap<String, Integer>();
-		Map<String, String> map2 = new HashMap<String, String>();
 		map.put("11", 1);
 		map.put("12", 12);
 		map.put("13", 13);
 		map.put("14", 18);
 		map.put("15", 19);
 		map.put("16", 14);
-		Integer s = map.put("17", 13);// return type of map.put = values type
+		
+		System.out.println("******");
+		Integer s = map.put("16", 13);// return type of map.put = values type
+		System.out.println(s);
+		System.out.println("******");
+		
+		Map<String, String> map2 = new HashMap<String, String>();
 		String ii = map2.put("", "");
 
 		Map<String, Integer> s_msp = sortMapByValue(map);
@@ -28,6 +33,9 @@ public class SortMapByValue {
 			System.out.println(mm.getValue());
 		}
 
+		//Collections.syn
+		//map.va
+		
 	}
 
 	private static Map<String, Integer> sortMapByValue(Map<String, Integer> map) {
